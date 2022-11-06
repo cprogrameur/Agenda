@@ -1,0 +1,119 @@
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8 col-md-offset-2">
+                <h2 class="centered">Formulaire de sondage</h2>
+                <form class="contact-form php-mail-form" role="form" action="contactform/contactform.php" method="POST">
+
+                    <div class="form-group">
+                        <strong>Sélectionnez une Filière*:</strong>
+                        <select formControlName="filiere" class="form-control" id="contact-email">
+                            <option value="marketing">Communication Digitale et Web
+                                Marketing</option>
+                            <option value="management">Management des Ressources Humaines
+                            </option>
+                            <option value="banque_finance">Banque et Finances</option>
+                            <option value="comptabilite_gestion">Comptabilité et Gestion
+                            </option>
+                            <option value="informatique">Réseau et Génie logiciel</option>
+                            <option value="expertise_comptable">Expertise Comptable</option>
+                            <option value="transport_logistique">Gestion des Transports et
+                                Logistiques
+                            </option>
+                            <option value="secu_info">Sécurité Informatique
+                            </option>
+                        </select>
+                        <div class="validate"></div>
+                    </div>
+                    <div class="form-group">
+                        <strong>Sélectionnez votre Niveau*:</strong>
+                        <select formControlName="annee" class="form-control" id="contact-email">
+                            <option value="licence1">Licence 1</option>
+                            <option value="licence2">Licence 2</option>
+                            <option value="licence3">Licence 3</option>
+                            <option value="master1">Master 1</option>
+                        </select>
+                        <div class="validate"></div>
+                    </div>
+                    <div class="form-group">
+                        <strong>Période Idéale Pour le bal*:</strong>
+                        <select formControlName="periode" class="form-control" id="contact-email">
+                            <option value="debut_decembre">Début Décembre</option>
+                            <option value="fin_decembre">Fin Décembre</option>
+                            <option value="janvier">Début Janvier</option>
+                        </select>
+                        <div class="validate"></div>
+                    </div>
+                    <div class="form-group">
+                        <strong>Jour Idéal Pour le bal*:</strong>
+                        <select formControlName="jour" class="form-control" id="contact-email">
+                            <option value="lundi">Lundi</option>
+                            <option value="mardi">Mardi</option>
+                            <option value="mercredi">Mercredi</option>
+                            <option value="jeudi">Jeudi</option>
+                            <option value="vendredi">Vendredi</option>
+                            <option value="samedi">Samedi</option>
+                            <option value="dimanche">Dimanche</option>
+                        </select>
+                        <div class="validate"></div>
+                    </div>
+                    <div class="form-group">
+                        <strong>Montant Idéal Pour le bal*:</strong>
+                        <select formControlName="montant" class="form-control" id="contact-email">
+                            <option value="10_20">Entre Dix et Vingt Milles</option>
+                            <option value="20_30">Entre Vingt et Trente Milles</option>
+                            <option value="plus">Plus de Vingt Milles</option>
+                        </select>
+                        <div class="validate"></div>
+                    </div>
+                    <div class="form-group">
+                        <strong>Thème du bal*:</strong>
+                        <select formControlName="theme" class="form-control" id="contact-email">
+                            <option value="noel">Bal de Noël</option>
+                            <option value="masque">Bal Masqué</option>
+                            <option value="autres">Autre Type de bal</option>
+                        </select>
+                        <div class="validate"></div>
+                    </div>
+                    <div class="form-group">
+                        <strong>Participerez-vous au bal *?</strong>
+                        <select formControlName="participation" class="form-control" id="contact-email">
+                            <option value="oui">Bal de Noël</option>
+                            <option value="non">Bal Masqué</option>
+                            <option value="peut_etre">Peut-être Bien</option>
+                        </select>
+                        <div class="validate"></div>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" formControlName="phone" class="form-control" id="contact-email"
+                            placeholder="Votre numéro de téléphone">
+                        <div class="validate"></div>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" formControlName="email" class="form-control" id="contact-subject"
+                            placeholder="Votre Email">
+                        <div class="validate"></div>
+                    </div>
+
+                    <div class="form-group">
+                        <textarea class="form-control" formControlName="suggestions" id="contact-message"
+                            placeholder="Vos Suggestions" rows="5" data-rule="required"
+                            data-msg="Please write something for us"></textarea>
+                        <div class="validate"></div>
+                    </div>
+
+                    <div class="loading"></div>
+                    <div class="error-message"></div>
+                    <div class="sent-message">Your message has been sent. Thank you!</div>
+
+                    <div class="form-send">
+                        <button type="submit" class="btn btn-large">Send Message</button>
+                    </div>
+
+                </form>
+
+            </div>
+        </div>
+    </div>
+</div>
+<!-- / contact -->
